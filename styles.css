@@ -1,0 +1,105 @@
+:root{
+    --Lineargradientactiveinputborder: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    --Redinputerrors: hsl(0, 100%, 66%);
+
+    --White: hsl(0, 0%, 100%);
+    --Lightgrayishviolet: hsl(270, 3%, 87%);
+    --Darkgrayishviolet: hsl(279, 6%, 55%);
+    --Verydarkviolet: hsl(278, 68%, 11%);
+
+    --Font:"Space Grotesk", sans-serif;
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+.contenedor{
+    display: flex;
+    overflow: hidden;
+}
+
+.content-info{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.content-img{
+    display: flex;
+    height: 100vh;
+    width: 488px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--Font);
+    color: var(--Verydarkviolet);
+    font-weight: 500;
+    font-size: 18px;
+    width: 400px;
+}
+.form input{
+    padding: 10px;
+    border: 1px solid var(--Darkgrayishviolet);
+    border-radius: 5px;
+    height: 50px;
+}
+.form input::placeholder{
+    font-family: var(--Font);
+    font-weight: 500;
+    color: var(--Darkgrayishviolet);
+    font-size: 20px;
+}
+.form-cardname{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-style: none;
+}
+.form-cardnumber{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin-top: 25px;
+}
+.form-expDate{
+    display: inline-flex;
+    flex-direction: row;
+    border: none;
+    margin-top: 25px;
+    gap: 10px;
+    width: 100%;
+}
+.expdate-box{
+    display: flex;
+    gap: 10px;
+    
+}
+.expdate-box input{
+    display: flex;
+    width: 100%;
+    
+}
+
+.form-cvc{
+    display: flex;
+    flex-direction: column;
+}
+.form-button{
+    border: none;
+}.form-button button{
+    width: 100%;
+    background-color: var(--Verydarkviolet);
+    border: none;
+    cursor: pointer;
+    color: var(--White);
+    font-family: var(--Font);
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 25px;
+    height: 65px;
+}
